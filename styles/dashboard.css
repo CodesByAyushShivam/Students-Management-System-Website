@@ -80,3 +80,37 @@ body {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+
+
+
+@media (max-width: 600px) {
+    .nav .logo {
+        font-size: 16px;
+    }
+
+    .logout button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .nav .logo {
+        font-size: 14px;
+    }
+
+    .logout button {
+        padding: 2px 8px;
+        font-size: 8px;
+    }
+
+    .logo .img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav {
+        padding: 4px 8px;
+    }
+}
