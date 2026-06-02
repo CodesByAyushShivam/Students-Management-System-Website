@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Georama:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Sekuya&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+}
+
+:root {
+    --primary-color: rgb(109, 40, 217);
+    --secondary-color-a: rgb(167, 139, 250);
+    --secondary-color-b: rgb(196, 181, 253);
+    --secondary-color-c: rgb(221, 214, 254);
+    --tertiary-color: rgb(247, 230, 255);
+    --text-color: rgb(51, 51, 51);
+}
+
+body {
+    background-color: var(--secondary-color-c);
+    color: var(--text-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: var(--tertiary-color);
+    backdrop-filter: blur(10px);
+    color: var(--primary-color);
+    box-shadow: 0 8px 6px rgba(251, 136, 255, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+
+.nav .logo {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo .img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    background: url('../assets/logo-transparent-blue.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+.name {
+    font-family: "Black Ops One", system-ui;
+}
+
+
+.logout button {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logout button:hover {
+    color: white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
