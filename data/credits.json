@@ -1,0 +1,412 @@
+{
+    "subjects": [
+        {
+            "name": "PPS",
+            "credits": 3
+        },
+        {
+            "name": "ITW",
+            "credits": 2
+        },
+        {
+            "name": "English",
+            "credits": 3
+        },
+        {
+            "name": "Mathematics",
+            "credits": 4
+        },
+        {
+            "name": "Chemistry",
+            "credits": 3
+        },
+        {
+            "name": "Circuit Theory",
+            "credits": 3
+        },
+        {
+            "name": "Electromagnetics",
+            "credits": 3
+        },
+        {
+            "name": "Physics",
+            "credits": 3
+        },
+        {
+            "name": "Fundamentals of Computing",
+            "credits": 2
+        },
+        {
+            "name": "Biology",
+            "credits": 1
+        },
+        {
+            "name": "Environmental Studies",
+            "credits": 1
+        },
+        {
+            "name": "Thermodynamics",
+            "credits": 3
+        },
+        {
+            "name": "Material Science",
+            "credits": 2
+        },
+        {
+            "name": "Engineering Drawing",
+            "credits": 2
+        },
+        {
+            "name": "Workshop",
+            "credits": 2
+        },
+        {
+            "name": "DBMS",
+            "credits": 4
+        },
+        {
+            "name": "OS",
+            "credits": 3
+        },
+        {
+            "name": "Computer Networks",
+            "credits": 3
+        },
+        {
+            "name": "Software Engineering",
+            "credits": 3
+        },
+        {
+            "name": "Probability",
+            "credits": 3
+        },
+        {
+            "name": "Data Structures",
+            "credits": 3
+        },
+        {
+            "name": "DELD",
+            "credits": 3
+        },
+        {
+            "name": "Digital Logic",
+            "credits": 4
+        },
+        {
+            "name": "OOP",
+            "credits": 3
+        },
+        {
+            "name": "Soft Skills",
+            "credits": 2
+        },
+        {
+            "name": "Power Systems",
+            "credits": 3
+        },
+        {
+            "name": "Control Systems",
+            "credits": 3
+        },
+        {
+            "name": "Microprocessors",
+            "credits": 3
+        },
+        {
+            "name": "Measurements",
+            "credits": 1
+        },
+        {
+            "name": "Economics",
+            "credits": 1
+        },
+        {
+            "name": "Linear Algebra",
+            "credits": 1
+        },
+        {
+            "name": "Data Mining",
+            "credits": 2
+        },
+        {
+            "name": "AI Basics",
+            "credits": 2
+        },
+        {
+            "name": "Communication",
+            "credits": 2
+        },
+        {
+            "name": "Big Data",
+            "credits": 3
+        },
+        {
+            "name": "Data Visualization",
+            "credits": 3
+        },
+        {
+            "name": "Cloud Computing",
+            "credits": 3
+        },
+        {
+            "name": "Algorithms",
+            "credits": 3
+        },
+        {
+            "name": "Mechanics of Solids",
+            "credits": 3
+        },
+        {
+            "name": "Manufacturing",
+            "credits": 3
+        },
+        {
+            "name": "Fluid Mechanics",
+            "credits": 3
+        },
+        {
+            "name": "Machine Drawing",
+            "credits": 2
+        },
+        {
+            "name": "Structural Analysis",
+            "credits": 3
+        },
+        {
+            "name": "Environmental Engg",
+            "credits": 3
+        },
+        {
+            "name": "Concrete Tech",
+            "credits": 3
+        },
+        {
+            "name": "CAD",
+            "credits": 3
+        },
+        {
+            "name": "Machine Learning",
+            "credits": 3
+        },
+        {
+            "name": "Cyber Security",
+            "credits": 3
+        },
+        {
+            "name": "Mobile Apps",
+            "credits": 3
+        },
+        {
+            "name": "Ethics",
+            "credits": 2
+        },
+        {
+            "name": "Compiler Design",
+            "credits": 3
+        },
+        {
+            "name": "AI",
+            "credits": 3
+        },
+        {
+            "name": "Web Technology",
+            "credits": 3
+        },
+        {
+            "name": "Renewables",
+            "credits": 3
+        },
+        {
+            "name": "Smart Grid",
+            "credits": 3
+        },
+        {
+            "name": "Feedback Control",
+            "credits": 2
+        },
+        {
+            "name": "HVAC",
+            "credits": 3
+        },
+        {
+            "name": "Project",
+            "credits": 3
+        },
+        {
+            "name": "NLP",
+            "credits": 3
+        },
+        {
+            "name": "Robotics",
+            "credits": 3
+        },
+        {
+            "name": "Cloud",
+            "credits": 3
+        },
+        {
+            "name": "Project Work",
+            "credits": 3
+        },
+        {
+            "name": "Predictive Analytics",
+            "credits": 3
+        },
+        {
+            "name": "Python Advanced",
+            "credits": 3
+        },
+        {
+            "name": "Graph Theory",
+            "credits": 3
+        },
+        {
+            "name": "Research Methods",
+            "credits": 3
+        },
+        {
+            "name": "Seminar",
+            "credits": 1
+        },
+        {
+            "name": "Machine Design",
+            "credits": 3
+        },
+        {
+            "name": "Mechatronics",
+            "credits": 3
+        },
+        {
+            "name": "Automobile Engineering",
+            "credits": 4
+        },
+        {
+            "name": "Industrial Engineering",
+            "credits": 4
+        },
+        {
+            "name": "Foundation Engineering",
+            "credits": 3
+        },
+        {
+            "name": "Earthquake Engg",
+            "credits": 3
+        },
+        {
+            "name": "Construction Mgt",
+            "credits": 3
+        },
+        {
+            "name": "Urban Planning",
+            "credits": 3
+        },
+        {
+            "name": "Internship",
+            "credits": 3
+        },
+        {
+            "name": "Advanced AI",
+            "credits": 3
+        },
+        {
+            "name": "Quantum Computing",
+            "credits": 4
+        },
+        {
+            "name": "Entrepreneurship",
+            "credits": 3
+        },
+        {
+            "name": "Distributed Systems",
+            "credits": 3
+        },
+        {
+            "name": "IoT",
+            "credits": 2
+        },
+        {
+            "name": "Electric Vehicles",
+            "credits": 3
+        },
+        {
+            "name": "Grid Integration",
+            "credits": 3
+        },
+        {
+            "name": "Advanced Power",
+            "credits": 3
+        },
+        {
+            "name": "Research",
+            "credits": 3
+        },
+        {
+            "name": "Autonomous Systems",
+            "credits": 3
+        },
+        {
+            "name": "Cognitive Computing",
+            "credits": 3
+        },
+        {
+            "name": "Biometric Systems",
+            "credits": 3
+        },
+        {
+            "name": "Innovation",
+            "credits": 3
+        },
+        {
+            "name": "Capstone",
+            "credits": 3
+        },
+        {
+            "name": "AI Systems",
+            "credits": 3
+        },
+        {
+            "name": "Research Project",
+            "credits": 3
+        },
+        {
+            "name": "Leadership",
+            "credits": 3
+        },
+        {
+            "name": "Thesis",
+            "credits": 2
+        },
+        {
+            "name": "Energy Systems",
+            "credits": 3
+        },
+        {
+            "name": "Advanced Manufacturing",
+            "credits": 3
+        },
+        {
+            "name": "CNC",
+            "credits": 3
+        },
+        {
+            "name": "Advanced Construction",
+            "credits": 3
+        },
+        {
+            "name": "Programming",
+            "credits": 3
+        },
+        {
+            "name": "Discrete Mathematics",
+            "credits": 4
+        },
+        {
+            "name": "Python Programming",
+            "credits": 3
+        },
+        {
+            "name": "Statistics",
+            "credits": 3
+        }
+    ]
+}

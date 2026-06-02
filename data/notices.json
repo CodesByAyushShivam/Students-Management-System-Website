@@ -1,0 +1,29 @@
+{
+    "notices": [
+        {
+            "title": "Midterm Exam Schedule",
+            "content": "The midterm exams will be held from October 15th to October 20th. Please check the schedule on the student portal for your specific exam times.",
+            "date": "02-06-2026"
+        },
+        {
+            "title": "Library Hours Extended",
+            "content": "The library will be open until midnight during the exam period to provide students with a quiet study environment.",
+            "date": "18-05-2026"
+        },
+        {
+            "title": "Career Fair Next Week",
+            "content": "The annual career fair will take place on November 5th. Representatives from various companies will be present to discuss job opportunities and internships.",
+            "date": "06-05-2026"
+        },
+        {
+            "title": "New Course Offerings",
+            "content": "Several new courses have been added to the curriculum for the upcoming semester. Please check the course catalog for more details.",
+            "date": "25-04-2026"
+        },
+        {
+            "title": "Student Counseling Services",
+            "content": "Counseling services are available for students who may need support during stressful times. Please contact the student affairs office to schedule an appointment.",
+            "date": "14-03-2026"
+        }
+    ]
+}

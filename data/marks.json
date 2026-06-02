@@ -1,0 +1,704 @@
+{
+    "students": [
+        {
+            "regNo": "25105129001",
+            "branch": "CSE",
+            "semester": 2,
+            "marks": [
+                {
+                    "PPS": 42,
+                    "ITW": 83,
+                    "English": 84,
+                    "Mathematics": 26,
+                    "Chemistry": 71
+                }
+            ]
+        },
+        {
+            "regNo": "25105129002",
+            "branch": "CSE",
+            "semester": 2,
+            "marks": [
+                {
+                    "PPS": 67,
+                    "ITW": 61,
+                    "English": 77,
+                    "Mathematics": 75,
+                    "Chemistry": 74
+                }
+            ]
+        },
+        {
+            "regNo": "25144129003",
+            "branch": "EEE",
+            "semester": 2,
+            "marks": [
+                {
+                    "Circuit Theory": 68,
+                    "Electromagnetics": 66,
+                    "Physics": 94,
+                    "ITW": 65,
+                    "English": 87
+                }
+            ]
+        },
+        {
+            "regNo": "25148129004",
+            "branch": "AIML",
+            "semester": 1,
+            "marks": [
+                {
+                    "Fundamentals of Computing": 62,
+                    "Mathematics": 61,
+                    "English": 65,
+                    "Physics": 73,
+                    "Biology": 74
+                }
+            ]
+        },
+        {
+            "regNo": "25149129005",
+            "branch": "DS",
+            "semester": 1,
+            "marks": [
+                {
+                    "Fundamentals of Computing": 92,
+                    "Mathematics": 61,
+                    "English": 95,
+                    "Physics": 72,
+                    "Environmental Studies": 94
+                }
+            ]
+        },
+        {
+            "regNo": "25106129006",
+            "branch": "ME",
+            "semester": 2,
+            "marks": [
+                {
+                    "Thermodynamics": 86,
+                    "Material Science": 74,
+                    "Chemistry": 88,
+                    "ITW": 77,
+                    "Mathematics": 60
+                }
+            ]
+        },
+        {
+            "regNo": "25103129007",
+            "branch": "Civil",
+            "semester": 1,
+            "marks": [
+                {
+                    "Engineering Drawing": 70,
+                    "Mathematics": 87,
+                    "Physics": 81,
+                    "English": 77,
+                    "Workshop": 69
+                }
+            ]
+        },
+        {
+            "regNo": "24105129008",
+            "branch": "CSE",
+            "semester": 4,
+            "marks": [
+                {
+                    "DBMS": 73,
+                    "OS": 81,
+                    "Computer Networks": 66,
+                    "Software Engineering": 65,
+                    "Probability": 84
+                }
+            ]
+        },
+        {
+            "regNo": "24105129009",
+            "branch": "CSE",
+            "semester": 3,
+            "marks": [
+                {
+                    "Data Structures": 66,
+                    "DELD": 82,
+                    "Digital Logic": 82,
+                    "OOP": 76,
+                    "Soft Skills": 62
+                }
+            ]
+        },
+        {
+            "regNo": "24144129010",
+            "branch": "EEE",
+            "semester": 4,
+            "marks": [
+                {
+                    "Power Systems": 89,
+                    "Control Systems": 94,
+                    "Microprocessors": 67,
+                    "Measurements": 84,
+                    "Economics": 65
+                }
+            ]
+        },
+        {
+            "regNo": "24148129011",
+            "branch": "AIML",
+            "semester": 3,
+            "marks": [
+                {
+                    "Linear Algebra": 35,
+                    "Probability": 78,
+                    "Data Mining": 13,
+                    "AI Basics": 16,
+                    "Communication": 64
+                }
+            ]
+        },
+        {
+            "regNo": "24149129012",
+            "branch": "DS",
+            "semester": 4,
+            "marks": [
+                {
+                    "Big Data": 62,
+                    "Data Visualization": 74,
+                    "Cloud Computing": 78,
+                    "Algorithms": 65,
+                    "Economics": 74
+                }
+            ]
+        },
+        {
+            "regNo": "24106129013",
+            "branch": "ME",
+            "semester": 3,
+            "marks": [
+                {
+                    "Mechanics of Solids": 66,
+                    "Manufacturing": 84,
+                    "Fluid Mechanics": 77,
+                    "Machine Drawing": 89,
+                    "Soft Skills": 32
+                }
+            ]
+        },
+        {
+            "regNo": "24103129014",
+            "branch": "Civil",
+            "semester": 4,
+            "marks": [
+                {
+                    "Structural Analysis": 70,
+                    "Environmental Engg": 83,
+                    "Concrete Tech": 82,
+                    "CAD": 73,
+                    "Economics": 77
+                }
+            ]
+        },
+        {
+            "regNo": "23105129015",
+            "branch": "CSE",
+            "semester": 6,
+            "marks": [
+                {
+                    "Machine Learning": 64,
+                    "Cloud Computing": 70,
+                    "Cyber Security": 94,
+                    "Mobile Apps": 75,
+                    "Ethics": 70
+                }
+            ]
+        },
+        {
+            "regNo": "23105129016",
+            "branch": "CSE",
+            "semester": 5,
+            "marks": [
+                {
+                    "Algorithms": 89,
+                    "Compiler Design": 84,
+                    "AI": 77,
+                    "Web Technology": 95,
+                    "Economics": 74
+                }
+            ]
+        },
+        {
+            "regNo": "23144129017",
+            "branch": "EEE",
+            "semester": 6,
+            "marks": [
+                {
+                    "Renewables": 80,
+                    "Smart Grid": 63,
+                    "Feedback Control": 74,
+                    "HVAC": 62,
+                    "Project": 80
+                }
+            ]
+        },
+        {
+            "regNo": "23148129018",
+            "branch": "AIML",
+            "semester": 5,
+            "marks": [
+                {
+                    "NLP": 15,
+                    "Robotics": 77,
+                    "Big Data": 64,
+                    "Cloud": 31,
+                    "Project Work": 34
+                }
+            ]
+        },
+        {
+            "regNo": "23149129019",
+            "branch": "DS",
+            "semester": 6,
+            "marks": [
+                {
+                    "Predictive Analytics": 73,
+                    "Python Advanced": 91,
+                    "Graph Theory": 85,
+                    "Research Methods": 89,
+                    "Seminar": 69
+                }
+            ]
+        },
+        {
+            "regNo": "23106129020",
+            "branch": "ME",
+            "semester": 5,
+            "marks": [
+                {
+                    "Machine Design": 76,
+                    "Mechatronics": 68,
+                    "Automobile Engineering": 20,
+                    "Industrial Engineering": 95,
+                    "Project": 94
+                }
+            ]
+        },
+        {
+            "regNo": "23103129021",
+            "branch": "Civil",
+            "semester": 6,
+            "marks": [
+                {
+                    "Foundation Engineering": 76,
+                    "Earthquake Engg": 87,
+                    "Construction Mgt": 85,
+                    "Urban Planning": 83,
+                    "Seminar": 74
+                }
+            ]
+        },
+        {
+            "regNo": "22105129022",
+            "branch": "CSE",
+            "semester": 8,
+            "marks": [
+                {
+                    "Internship": 68,
+                    "Advanced AI": 92,
+                    "Quantum Computing": 91,
+                    "Entrepreneurship": 65,
+                    "Seminar": 63
+                }
+            ]
+        },
+        {
+            "regNo": "22105129023",
+            "branch": "CSE",
+            "semester": 7,
+            "marks": [
+                {
+                    "Distributed Systems": 67,
+                    "Big Data": 69,
+                    "Robotics": 70,
+                    "IoT": 87,
+                    "Project": 64
+                }
+            ]
+        },
+        {
+            "regNo": "22144129024",
+            "branch": "EEE",
+            "semester": 8,
+            "marks": [
+                {
+                    "Electric Vehicles": 84,
+                    "Grid Integration": 84,
+                    "Advanced Power": 89,
+                    "Research": 20,
+                    "Internship": 76
+                }
+            ]
+        },
+        {
+            "regNo": "22148129025",
+            "branch": "AIML",
+            "semester": 7,
+            "marks": [
+                {
+                    "Autonomous Systems": 95,
+                    "Cognitive Computing": 60,
+                    "Biometric Systems": 67,
+                    "Innovation": 94,
+                    "Internship": 77
+                }
+            ]
+        },
+        {
+            "regNo": "22149129026",
+            "branch": "DS",
+            "semester": 8,
+            "marks": [
+                {
+                    "Capstone": 81,
+                    "AI Systems": 67,
+                    "Research Project": 78,
+                    "Leadership": 87,
+                    "Thesis": 70
+                }
+            ]
+        },
+        {
+            "regNo": "22106129027",
+            "branch": "ME",
+            "semester": 7,
+            "marks": [
+                {
+                    "Energy Systems": 89,
+                    "Advanced Manufacturing": 60,
+                    "CNC": 76,
+                    "Project": 18,
+                    "Internship": 71
+                }
+            ]
+        },
+        {
+            "regNo": "22103129028",
+            "branch": "Civil",
+            "semester": 8,
+            "marks": [
+                {
+                    "Project Work": 92,
+                    "Advanced Construction": 27,
+                    "Innovation": 36,
+                    "Leadership": 92,
+                    "Thesis": 42
+                }
+            ]
+        },
+        {
+            "regNo": "25105129029",
+            "branch": "CSE",
+            "semester": 1,
+            "marks": [
+                {
+                    "Programming": 69,
+                    "Discrete Mathematics": 83,
+                    "Physics": 70,
+                    "English": 94,
+                    "Engineering Drawing": 93
+                }
+            ]
+        },
+        {
+            "regNo": "25144129030",
+            "branch": "EEE",
+            "semester": 2,
+            "marks": [
+                {
+                    "Circuit Theory": 60,
+                    "Electromagnetics": 80,
+                    "Physics": 91,
+                    "ITW": 61,
+                    "English": 67
+                }
+            ]
+        },
+        {
+            "regNo": "25148129031",
+            "branch": "AIML",
+            "semester": 2,
+            "marks": [
+                {
+                    "Python Programming": 83,
+                    "Statistics": 79,
+                    "English": 75,
+                    "ITW": 63,
+                    "Chemistry": 75
+                }
+            ]
+        },
+        {
+            "regNo": "25149129032",
+            "branch": "DS",
+            "semester": 1,
+            "marks": [
+                {
+                    "Fundamentals of Computing": 65,
+                    "Mathematics": 65,
+                    "English": 91,
+                    "Physics": 64,
+                    "Environmental Studies": 94
+                }
+            ]
+        },
+        {
+            "regNo": "25106129033",
+            "branch": "ME",
+            "semester": 2,
+            "marks": [
+                {
+                    "Thermodynamics": 68,
+                    "Material Science": 68,
+                    "Chemistry": 90,
+                    "ITW": 95,
+                    "Mathematics": 70
+                }
+            ]
+        },
+        {
+            "regNo": "25103129034",
+            "branch": "Civil",
+            "semester": 1,
+            "marks": [
+                {
+                    "Engineering Drawing": 76,
+                    "Mathematics": 93,
+                    "Physics": 87,
+                    "English": 73,
+                    "Workshop": 94
+                }
+            ]
+        },
+        {
+            "regNo": "24105129035",
+            "branch": "CSE",
+            "semester": 3,
+            "marks": [
+                {
+                    "Data Structures": 72,
+                    "DELD": 79,
+                    "Digital Logic": 85,
+                    "OOP": 83,
+                    "Soft Skills": 88
+                }
+            ]
+        },
+        {
+            "regNo": "24144129036",
+            "branch": "EEE",
+            "semester": 4,
+            "marks": [
+                {
+                    "Power Systems": 93,
+                    "Control Systems": 88,
+                    "Microprocessors": 67,
+                    "Measurements": 75,
+                    "Economics": 74
+                }
+            ]
+        },
+        {
+            "regNo": "24148129037",
+            "branch": "AIML",
+            "semester": 3,
+            "marks": [
+                {
+                    "Linear Algebra": 43,
+                    "Probability": 36,
+                    "Data Mining": 23,
+                    "AI Basics": 95,
+                    "Communication": 74
+                }
+            ]
+        },
+        {
+            "regNo": "24149129038",
+            "branch": "DS",
+            "semester": 4,
+            "marks": [
+                {
+                    "Big Data": 74,
+                    "Data Visualization": 60,
+                    "Cloud Computing": 64,
+                    "Algorithms": 63,
+                    "Economics": 74
+                }
+            ]
+        },
+        {
+            "regNo": "24106129039",
+            "branch": "ME",
+            "semester": 3,
+            "marks": [
+                {
+                    "Mechanics of Solids": 64,
+                    "Manufacturing": 62,
+                    "Fluid Mechanics": 81,
+                    "Machine Drawing": 64,
+                    "Soft Skills": 92
+                }
+            ]
+        },
+        {
+            "regNo": "24103129040",
+            "branch": "Civil",
+            "semester": 4,
+            "marks": [
+                {
+                    "Structural Analysis": 75,
+                    "Environmental Engg": 77,
+                    "Concrete Tech": 91,
+                    "CAD": 73,
+                    "Economics": 94
+                }
+            ]
+        },
+        {
+            "regNo": "23105129041",
+            "branch": "CSE",
+            "semester": 5,
+            "marks": [
+                {
+                    "Algorithms": 68,
+                    "Compiler Design": 50,
+                    "AI": 75,
+                    "Web Technology": 90,
+                    "Economics": 86
+                }
+            ]
+        },
+        {
+            "regNo": "23144129042",
+            "branch": "EEE",
+            "semester": 6,
+            "marks": [
+                {
+                    "Renewables": 72,
+                    "Smart Grid": 66,
+                    "Feedback Control": 66,
+                    "HVAC": 87,
+                    "Project": 82
+                }
+            ]
+        },
+        {
+            "regNo": "23148129043",
+            "branch": "AIML",
+            "semester": 5,
+            "marks": [
+                {
+                    "NLP": 87,
+                    "Robotics": 86,
+                    "Big Data": 59,
+                    "Cloud": 63,
+                    "Project Work": 66
+                }
+            ]
+        },
+        {
+            "regNo": "23149129044",
+            "branch": "DS",
+            "semester": 6,
+            "marks": [
+                {
+                    "Predictive Analytics": 63,
+                    "Python Advanced": 85,
+                    "Graph Theory": 81,
+                    "Research Methods": 66,
+                    "Seminar": 75
+                }
+            ]
+        },
+        {
+            "regNo": "23106129045",
+            "branch": "ME",
+            "semester": 5,
+            "marks": [
+                {
+                    "Machine Design": 72,
+                    "Mechatronics": 72,
+                    "Automobile Engineering": 94,
+                    "Industrial Engineering": 88,
+                    "Project": 68
+                }
+            ]
+        },
+        {
+            "regNo": "23103129046",
+            "branch": "Civil",
+            "semester": 6,
+            "marks": [
+                {
+                    "Foundation Engineering": 87,
+                    "Earthquake Engg": 43,
+                    "Construction Mgt": 77,
+                    "Urban Planning": 26,
+                    "Seminar": 28
+                }
+            ]
+        },
+        {
+            "regNo": "22105129047",
+            "branch": "CSE",
+            "semester": 7,
+            "marks": [
+                {
+                    "Distributed Systems": 64,
+                    "Big Data": 33,
+                    "Robotics": 95,
+                    "IoT": 12,
+                    "Project": 33
+                }
+            ]
+        },
+        {
+            "regNo": "22144129048",
+            "branch": "EEE",
+            "semester": 8,
+            "marks": [
+                {
+                    "Electric Vehicles": 94,
+                    "Grid Integration": 60,
+                    "Advanced Power": 65,
+                    "Research": 75,
+                    "Internship": 70
+                }
+            ]
+        },
+        {
+            "regNo": "22148129049",
+            "branch": "AIML",
+            "semester": 7,
+            "marks": [
+                {
+                    "Autonomous Systems": 86,
+                    "Cognitive Computing": 91,
+                    "Biometric Systems": 90,
+                    "Innovation": 73,
+                    "Internship": 85
+                }
+            ]
+        },
+        {
+            "regNo": "22149129050",
+            "branch": "DS",
+            "semester": 8,
+            "marks": [
+                {
+                    "Capstone": 63,
+                    "AI Systems": 70,
+                    "Research Project": 84,
+                    "Leadership": 60,
+                    "Thesis": 84
+                }
+            ]
+        }
+    ]
+}

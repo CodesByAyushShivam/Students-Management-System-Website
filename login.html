@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="marks.html">Marks</a>
+            <a href="notices.html">Notices</a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="login">
+            <form id="login-form">
+                <center>
+                    <h1>Login</h1>
+                    <hr>
+                </center>
+                <div class="label">
+                    <label id="reg">Registration Number <span>*</span></label><br>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="regNo" placeholder="Reg No." required>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <label id="pass">Password <span>*</span></label><br>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class="fa-regular fa-eye" id="togglePassword" style="display: none;"></i>
+                    </div>
+                </div>
+                <p><span>*</span> This field is required</p>
+                <input type="submit" value="Login" class="sbmt-btn"><br>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="navbar">
+            <div id="home">
+                <center>
+                    <i class="fa-solid fa-house-user"></i><br>
+                </center>
+                <a href="index.html">Home</a>
+            </div>
+            <div id="dashboard">
+                <center>
+                    <i class="fa-solid fa-box"></i><br>
+                </center>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+            <div id="marks">
+                <center>
+                    <i class="fa-solid fa-pen-to-square"></i><br>
+                </center>
+                <a href="marks.html">Marks</a>
+            </div>
+            <div id="notices">
+                <center>
+                    <i class="fa-solid fa-bell"></i><br>
+                </center>
+                <a href="notices.html">Notices</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

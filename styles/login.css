@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Georama:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Sekuya&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0)), url("../assets/login-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    background-color: rgba(248, 123, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 50px 25px;
+    min-width: 250px;
+    box-shadow: -0.1em 0 1em rgb(90, 0, 128);
+}
+
+.sbmt-btn {
+    color: black;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 900;
+    transition: 0.4s;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+
+.sbmt-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+
+.label {
+    margin: 25px 0px;
+}
+
+.label input {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 5px;
+    outline: none;
+    color: rgb(247, 134, 247);
+}
+
+
+.label input::placeholder {
+    color: rgb(247, 134, 247);
+}
+
+
+hr {
+    height: 4px;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    background-color: white;
+    margin: 0px 0px;
+    width: 80%;
+}
+
+span {
+    color: rgb(252, 153, 153);
+}
+
+
+p {
+    font-size: 10px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+
+
+.input-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+}
+
+.input-box i {
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.input-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(247, 134, 247);
+    height: 25px;
+}
+
+.login h1 {
+    font-family: "Playwrite GB J", sans-serif;
+    padding: 10px 0px;
+    width: 80%;
+}
+
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    width: 97%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    z-index: 100;
+}
+
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background: url("../assets/logo-transparent-white.png") no-repeat center;
+    background-size: contain;
+}
+
+.navbar {
+    display: none;
+}
+
+@media (max-width: 915px) {
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 95%;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .logo {
+        width: 100%;
+        height: 60px;
+        background: url("../assets/logo-transparent-blue.png") no-repeat center;
+        background-size: contain;
+        margin-right: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    .navbar {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+        z-index: 100;
+    }
+
+    .navbar a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .navbar div {
+        background-color: rgba(248, 205, 255, 0.9);
+        padding: 4px 12px;
+        border-radius: 25px;
+        color: black;
+        font-weight: 500;
+        transition: 0.4s;
+    }
+
+    .navbar div:hover {
+        cursor: pointer;
+        color: rgb(248, 205, 255);
+        background-color: black;
+    }
+
+    .navbar div:hover a {
+        color: rgb(248, 205, 255);
+    }
+}

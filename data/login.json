@@ -1,0 +1,411 @@
+{
+    "students": [
+        {
+            "regNo": "25105129001",
+            "password": "Aryan@123",
+            "name": "Aryan Adarsh",
+            "branch": "CSE",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25105129002",
+            "password": "Ayush@234",
+            "name": "Ayush Shivam",
+            "branch": "CSE",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25144129003",
+            "password": "Ashish@345",
+            "name": "Ashish Kumar",
+            "branch": "EEE",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25148129004",
+            "password": "Aman@456",
+            "name": "Aman Raj",
+            "branch": "AIML",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "25149129005",
+            "password": "Ankit@567",
+            "name": "Ankit Kumar",
+            "branch": "DS",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "25106129006",
+            "password": "Rohit@678",
+            "name": "Rohit Singh",
+            "branch": "ME",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25103129007",
+            "password": "Vikas@789",
+            "name": "Vikas Kumar",
+            "branch": "Civil",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "25105129008",
+            "password": "Zartab@123",
+            "name": "Md Zartab Alam",
+            "branch": "CSE",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "24105129009",
+            "password": "Saurav@246",
+            "name": "Saurav Kumar",
+            "branch": "CSE",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24144129010",
+            "password": "Nitin@357",
+            "name": "Nitin Kumar",
+            "branch": "EEE",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "24148129011",
+            "password": "Priyanshu@468",
+            "name": "Priyanshu Raj",
+            "branch": "AIML",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24149129012",
+            "password": "Shivam@579",
+            "name": "Shivam Kumar",
+            "branch": "DS",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "24106129013",
+            "password": "Abhishek@680",
+            "name": "Abhishek Singh",
+            "branch": "ME",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24103129014",
+            "password": "Harsh@791",
+            "name": "Harsh Kumar",
+            "branch": "Civil",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "23105129015",
+            "password": "Deepak@802",
+            "name": "Deepak Raj",
+            "branch": "CSE",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "23105129016",
+            "password": "Rahul@913",
+            "name": "Rahul Kumar",
+            "branch": "CSE",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23144129017",
+            "password": "Pankaj@124",
+            "name": "Pankaj Kumar",
+            "branch": "EEE",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "23148129018",
+            "password": "Ritesh@235",
+            "name": "Ritesh Raj",
+            "branch": "AIML",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23149129019",
+            "password": "Sumit@346",
+            "name": "Sumit Kumar",
+            "branch": "DS",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "23106129020",
+            "password": "Kunal@457",
+            "name": "Kunal Singh",
+            "branch": "ME",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23103129021",
+            "password": "Manish@568",
+            "name": "Manish Kumar",
+            "branch": "Civil",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "22105129022",
+            "password": "Ajeet@679",
+            "name": "Ajeet Kumar",
+            "branch": "CSE",
+            "semester": 8,
+            "role": "student"
+        },
+        {
+            "regNo": "22105129023",
+            "password": "Neeraj@780",
+            "name": "Neeraj Singh",
+            "branch": "CSE",
+            "semester": 7,
+            "role": "student"
+        },
+        {
+            "regNo": "22144129024",
+            "password": "Prakash@891",
+            "name": "Prakash Kumar",
+            "branch": "EEE",
+            "semester": 8,
+            "role": "student"
+        },
+        {
+            "regNo": "22148129025",
+            "password": "Vivek@902",
+            "name": "Vivek Raj",
+            "branch": "AIML",
+            "semester": 7,
+            "role": "student"
+        },
+        {
+            "regNo": "22149129026",
+            "password": "Ranjan@113",
+            "name": "Ranjan Kumar",
+            "branch": "DS",
+            "semester": 8,
+            "role": "student"
+        },
+        {
+            "regNo": "22106129027",
+            "password": "Sandeep@224",
+            "name": "Sandeep Singh",
+            "branch": "ME",
+            "semester": 7,
+            "role": "student"
+        },
+        {
+            "regNo": "22103129028",
+            "password": "Mukesh@335",
+            "name": "Mukesh Kumar",
+            "branch": "Civil",
+            "semester": 8,
+            "role": "student"
+        },
+        {
+            "regNo": "25105129029",
+            "password": "Arjun@446",
+            "name": "Arjun Kumar",
+            "branch": "CSE",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "25144129030",
+            "password": "Bipin@557",
+            "name": "Bipin Kumar",
+            "branch": "EEE",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25148129031",
+            "password": "Chandan@668",
+            "name": "Chandan Raj",
+            "branch": "AIML",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25149129032",
+            "password": "Dhiraj@779",
+            "name": "Dhiraj Kumar",
+            "branch": "DS",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "25106129033",
+            "password": "Gaurav@880",
+            "name": "Gaurav Singh",
+            "branch": "ME",
+            "semester": 2,
+            "role": "student"
+        },
+        {
+            "regNo": "25103129034",
+            "password": "Hemant@991",
+            "name": "Hemant Kumar",
+            "branch": "Civil",
+            "semester": 1,
+            "role": "student"
+        },
+        {
+            "regNo": "24105129035",
+            "password": "Lokesh@102",
+            "name": "Lokesh Kumar",
+            "branch": "CSE",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24144129036",
+            "password": "Mithun@213",
+            "name": "Mithun Raj",
+            "branch": "EEE",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "24148129037",
+            "password": "Naveen@324",
+            "name": "Naveen Kumar",
+            "branch": "AIML",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24149129038",
+            "password": "Omkar@435",
+            "name": "Omkar Kumar",
+            "branch": "DS",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "24106129039",
+            "password": "Pranav@546",
+            "name": "Pranav Singh",
+            "branch": "ME",
+            "semester": 3,
+            "role": "student"
+        },
+        {
+            "regNo": "24103129040",
+            "password": "Rakesh@657",
+            "name": "Rakesh Kumar",
+            "branch": "Civil",
+            "semester": 4,
+            "role": "student"
+        },
+        {
+            "regNo": "23105129041",
+            "password": "Sachin@768",
+            "name": "Sachin Kumar",
+            "branch": "CSE",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23144129042",
+            "password": "Tarun@879",
+            "name": "Tarun Kumar",
+            "branch": "EEE",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "23148129043",
+            "password": "Ujjwal@980",
+            "name": "Ujjwal Raj",
+            "branch": "AIML",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23149129044",
+            "password": "Varun@191",
+            "name": "Varun Kumar",
+            "branch": "DS",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "23106129045",
+            "password": "Yash@282",
+            "name": "Yash Singh",
+            "branch": "ME",
+            "semester": 5,
+            "role": "student"
+        },
+        {
+            "regNo": "23103129046",
+            "password": "Zeeshan@373",
+            "name": "Zeeshan Khan",
+            "branch": "Civil",
+            "semester": 6,
+            "role": "student"
+        },
+        {
+            "regNo": "22105129047",
+            "password": "Aakash@464",
+            "name": "Aakash Kumar",
+            "branch": "CSE",
+            "semester": 7,
+            "role": "student"
+        },
+        {
+            "regNo": "22144129048",
+            "password": "Bhaskar@575",
+            "name": "Bhaskar Kumar",
+            "branch": "EEE",
+            "semester": 8,
+            "role": "student"
+        },
+        {
+            "regNo": "22148129049",
+            "password": "Chirag@686",
+            "name": "Chirag Raj",
+            "branch": "AIML",
+            "semester": 7,
+            "role": "student"
+        },
+        {
+            "regNo": "22149129050",
+            "password": "Dev@797",
+            "name": "Dev Kumar",
+            "branch": "DS",
+            "semester": 8,
+            "role": "student"
+        }
+    ],
+    "admins": [
+        {
+            "regNo": "ADMIN001",
+            "password": "admin123",
+            "role": "admin"
+        }
+    ]
+}
