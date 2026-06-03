@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard | Ayush College of Engineering</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    <title>Student Dashboard | Ayush College of Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/dashboard.css">
@@ -14,13 +15,41 @@
     <div class="nav">
         <div class="logo">
             <div class="img"></div>
-            <div class="name">
+            <div class="title">
                 Ayush College of Engineering
             </div>
         </div>
         <div class="logout">
             <button onclick="logout()">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
         </div>
+    </div>
+
+    <div class="leftnav">
+        <div class="info">
+            <div class="user-pfp"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="user-name">Student</div>
+            <div class="user-reg">Reg: Registration No.</div>
+            <div class="sem-info">Sem X <strong>&middot;</strong> Branch</div>
+        </div>
+
+        <nav>
+            <div id="dashboard" class="nav-items active">
+                <i class="fa-regular fa-chart-bar"></i>
+                Dashboard
+            </div>
+            <div id="marks" class="nav-items" onclick="openMarks()">
+                <i class="fa-solid fa-list-check"></i>
+                Marks
+            </div>
+            <div id="notices" class="nav-items" onclick="openNotices()">
+                <i class="fa-regular fa-bell"></i>
+                Notices
+            </div>
+            <div id="payments" class="nav-items" onclick="openPayments()">
+                <i class="fa-regular fa-credit-card"></i>
+                Payments
+            </div>
+        </nav>
     </div>
     <script src="scripts/auth.js"></script>
     <script src="scripts/dashboard.js"></script>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Georama:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Sekuya&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,7 +57,7 @@ body {
 }
 
 
-.name {
+.title {
     font-family: "Black Ops One", system-ui;
 }
 
@@ -81,15 +81,131 @@ body {
     border: 2px solid var(--primary-color);
 }
 
+nav {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
 
+.nav-items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 4%;
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 2px solid var(--primary-color);
+    transition: 0.4s;
+}
+
+.nav-items:hover {
+    background-color: rgb(60, 0, 120);
+    color: white;
+    border: 2px solid rgb(60, 0, 120);
+    cursor: pointer;
+}
+
+
+.active {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+
+.leftnav {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    align-items: left;
+    width: 20%;
+    padding: 20px 0;
+    height: 100vh;
+    gap: 10px;
+}
+
+.info {
+    margin: 0 2%;
+    padding: 3%;
+    background-color: var(--secondary-color-b);
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+
+.user-name{
+    font-size: 22px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.user-pfp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(91, 0, 156);
+    border: 3px solid var(--primary-color);
+    background-color: var(--secondary-color-a);
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1/1;
+    font-size: 40px;
+}
+
+@media (max-width: 1250px) {
+    .user-pfp {
+        width: 35%;
+    }
+}
+
+@media (max-width: 900px) {
+    .leftnav {
+        width: 25%;
+    }
+
+    .user-pfp {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftnav {
+        width: 30%;
+    }
+
+    .info {
+        font-size: 12px;
+    }
+
+    nav {
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 600px) {
     .nav .logo {
         font-size: 16px;
     }
 
+    .info {
+        font-size: 10px;
+    }
+
     .logout button {
         padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .user-name {
+        font-size: 18px;
+    }
+
+    nav {
         font-size: 12px;
     }
 }
@@ -98,19 +214,36 @@ body {
 @media (max-width: 480px) {
     .nav .logo {
         font-size: 14px;
+        flex-direction: column;
     }
 
-    .logout button {
-        padding: 2px 8px;
-        font-size: 8px;
+    .logout {
+        display: none;
     }
 
     .logo .img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        margin: 0;
     }
 
     .nav {
+        justify-content: center;
         padding: 4px 8px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftnav {
+        display: none;
     }
 }
