@@ -95,7 +95,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     let totalCredits = 0;
     let totalPoints = 0;
-    
+
 
     Object.keys(marksList.marks[0]).forEach(el => {
         totalPoints += pointersOf(el) * creditsOf(el);
@@ -105,6 +105,34 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 
     const sgpa = totalPoints / totalCredits;
-
     document.getElementById("sgpa").innerText = sgpa.toFixed(2);
+
+    let marksContent = `
+        <div class="table-head">SUBJECT</div>
+        <div class="table-head">MARKS</div>
+        <div class="table-head">STATUS</div>
+    `;
+
+    Object.keys(marksList.marks[0]).forEach(subject => {
+        if(pointersOf(subject)>=5){
+            marksContent += `
+            <div class="row">${subject}</div>    
+            <div class="row">${marksList.marks[0][subject]}</div>
+            <div class="row">
+                <span class="status pass">PASS</span>
+            </div>  
+            `;
+        } else {
+            marksContent += `
+            <div class="row fail-text">${subject}</div>    
+            <div class="row fail-text">${marksList.marks[0][subject]}</div>
+            <div class="row">
+                <span class="status fail">FAIL</span>
+            </div>  
+            `;
+        }
+    })
+
+    document.querySelector(".marks-table").innerHTML = marksContent;
+    document.getElementById("total-credits").innerText = totalCredits;
 });
