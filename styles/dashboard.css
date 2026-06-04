@@ -391,6 +391,17 @@ nav {
     animation-delay: 0.6s;
 }
 
+
+
+
+
+
+
+.attendance {
+    grid-column: 1/6;
+    grid-row: 9/12;
+}
+
 @keyframes beat {
     0%, 66%, 100% {
         transform: scale(1);
