@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     `;
 
     Object.keys(marksList.marks[0]).forEach(subject => {
-        if(pointersOf(subject)>=5){
+        if (pointersOf(subject) >= 5) {
             marksContent += `
             <div class="row">${subject}</div>    
             <div class="row">${marksList.marks[0][subject]}</div>
@@ -135,4 +135,52 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     document.querySelector(".marks-table").innerHTML = marksContent;
     document.getElementById("total-credits").innerText = totalCredits;
+
+
+    const attendanceFile = await fetch("/data/attendance.json");
+    const attendanceData = await attendanceFile.json();
+    const attendancePatch = attendanceData.attendance.find(el => el.regNo === regNo);
+
+    const attendPercent = (attendancePatch.present * 100 / attendanceData.totalDays).toFixed(1);
+
+    const circle = document.querySelector(".progress");
+    const text = document.getElementById("percentage");
+    const classesNeededFor75 = Math.max(0, Math.ceil((0.75 * attendanceData.totalDays - attendancePatch.present) / 0.25));
+    const attendanceNote = document.getElementById("note");
+
+    const radius = circle.r.baseVal.value;
+
+    const circumference = 2 * Math.PI * radius;
+
+    circle.style.strokeDasharray = circumference;
+
+    circle.style.strokeDashoffset =
+        circumference -
+        (attendPercent / 100) * circumference;
+
+    text.textContent = attendPercent + "%";
+
+    if (attendPercent >= 75) {
+        document.getElementById("progress").style.stroke = "var(--success-color)";
+        document.querySelector(".attend-head").style.color = "var(--success-color)";
+        text.style.color = "var(--success-color)";
+        document.querySelector(".attend-note").setAttribute(`style`, `
+            background-color: #e8ffe2;
+            color: var(--success-color);
+            border: 2px solid var(--success-color);
+        `);
+        attendanceNote.innerHTML = `
+            <strong>Congratulations:</strong> You have attended ${attendancePatch.present} out of ${attendanceData.totalDays} classes and are safe with above 75% attendance. Keep going the same way.
+        `;
+
+        document.getElementById("msg").innerText = `
+            Hurray! You have successfully surpassed the minimum 75% attendance cutoff.
+        `;
+
+        document.querySelector(".attendance").style.borderColor = "var(--success-color)";
+    } else {
+        attendanceNote.innerHTML = `
+            <strong>Action Required:</strong> You must attend ${classesNeededFor75} more consecutive classes to reach the minimum 75% attendance threshold and avoid the academic panalties.
+        `;
+    }
 });

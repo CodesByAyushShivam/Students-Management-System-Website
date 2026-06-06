@@ -78,7 +78,8 @@
                 <div class="marks-head">
                     <h1>Marks</h1>
                     <div class="dots">
-                        <i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i>
+                        <i class="fa-regular fa-circle"></i><i class="fa-regular fa-circle"></i><i
+                            class="fa-regular fa-circle"></i>
                     </div>
                 </div>
                 <hr>
@@ -103,7 +104,39 @@
 
 
             <div class="attendance box">
+                <div class="attend-head">
+                    <i class="fa-regular fa-calendar"></i>
+                    <h1>Attendance Report</h1>
+                </div>
 
+                <div class="attend-content">
+                    <div class="progress-container">
+
+                        <svg class="progress-ring" viewBox="0 0 200 200">
+
+                            <circle class="bg" cx="100" cy="100" r="80">
+                            </circle>
+
+                            <circle class="progress" cx="100" cy="100" r="80" id="progress">
+                            </circle>
+
+                        </svg>
+
+                        <div class="percentage" id="percentage">
+                            0%
+                        </div>
+
+                    </div>
+
+
+                    <div class="attend-report">
+                        <p id="msg">Your overall attendance is currently below the minimum required 75% attendance mark.</p>
+                        
+                        <div class="attend-note" id="note">
+                            <!-- Message note will be generated here dynamically using the js logic based on the number of classes the student has attended -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
