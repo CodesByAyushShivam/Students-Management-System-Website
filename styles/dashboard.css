@@ -540,26 +540,17 @@ nav {
 }
 
 
-.github{
+
+.copyright-footer {
     grid-column: 1/8;
-}
-
-
-.github,.git-card {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
     gap: 5px;
 }
 
 
-.git-card {
-    background-color: #000000;
-    color: rgb(0, 255, 255);
-    padding: 5px;
-    border-radius: 500px;
-    cursor: pointer;
-}
 
 
 @keyframes beat {
