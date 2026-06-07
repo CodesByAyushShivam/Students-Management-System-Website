@@ -479,6 +479,89 @@ nav {
 }
 
 
+.notice-board {
+    grid-row: 5/14;
+    grid-column: 6/8;
+}
+
+
+.notice-board .heading {
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.notice-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.notice {
+    padding: 5px;
+    background-color: #e8e8e8;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: 0.3s;
+}
+
+.notice:hover {
+    cursor: pointer;
+    background-color: #d7f6e7;
+}
+
+
+.notice-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-title h1 {
+    font-size: 15px;
+}
+
+.notice-title p {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.notice-content {
+    font-size: 12px;
+}
+
+
+.github{
+    grid-column: 1/8;
+}
+
+
+.github,.git-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.git-card {
+    background-color: #000000;
+    color: rgb(0, 255, 255);
+    padding: 5px;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+
 @keyframes beat {
     0%, 66%, 100% {
         transform: scale(1);

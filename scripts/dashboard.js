@@ -23,6 +23,10 @@ function openPayments() {
     window.location.href = "payments.html";
 }
 
+function openGithub() {
+    window.open("https://github.com/CodesByAyushShivam", "_blank")
+}
+
 window.addEventListener("DOMContentLoaded", async () => {
     const regNo = localStorage.getItem("regNo");
     const userData = await fetch("/data/login.json");
@@ -183,4 +187,24 @@ window.addEventListener("DOMContentLoaded", async () => {
             <strong>Action Required:</strong> You must attend ${classesNeededFor75} more consecutive classes to reach the minimum 75% attendance threshold and avoid the academic panalties.
         `;
     }
+
+
+    const noticeFile = await fetch("/data/notices.json");
+    const noticeDoc = await noticeFile.json();
+    const notices = noticeDoc.notices;
+    let noticeContent = ``;
+
+    for(let i = 0; i <= 4; i++){
+        noticeContent += `
+            <div class="notice">
+                <div class="notice-title">
+                    <h1>${notices[i].title}</h1>
+                    <p>${notices[i].date}</p>
+                </div>
+                <div class="notice-content">${notices[i].content}</div>
+            </div>
+        `;
+    }
+
+    document.querySelector(".notice-container").innerHTML = noticeContent;
 });
