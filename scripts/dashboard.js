@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     document.querySelectorAll(".user-name").forEach(el => el.innerText = student.name);
     document.querySelectorAll(".user-reg").forEach(el => el.innerText = `Reg: ${student.regNo}`);
     document.querySelectorAll(".sem-info").forEach(el => el.innerHTML = `Sem ${student.semester} <strong>&middot;</strong> ${student.branch}`);
+    document.querySelectorAll(".user-branch").forEach(el => el.innerText = student.branch);
 
     document.querySelectorAll(".first-name").forEach(el => el.innerText = firstName);
     document.querySelectorAll(".semester").forEach(el => el.innerText = student.semester);

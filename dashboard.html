@@ -57,9 +57,27 @@
     <main class="main-content">
         <div class="grid">
             <div class="greet box">
-                <h1>Welcome back, <span class="first-name">Student</span>!</h1>
-                <p>Here's a quick overview of your academic performance for semester <span class="semester">X</span>.
-                </p>
+                <div class="greet-desktop">
+                    <h1>Welcome back, <span class="first-name">Student</span>!</h1>
+                    <p>Here's a quick overview of your academic performance for semester <span class="semester">X</span>.
+                    </p>
+                </div>
+                <div class="greet-mobile">
+                    <div class="mobile-pfp-container">
+                        <div class="user-pfp"><i class="fa-solid fa-user-graduate"></i></div>
+                        <span class="status-dot"></span>
+                    </div>
+                    <div class="mobile-info-container">
+                        <div class="name-status-row">
+                            <h2 class="user-name">Student Name</h2>
+                        </div>
+                        <p class="user-reg">Reg: Registration No.</p>
+                        <div class="badges-row">
+                            <span class="badge purple-badge">BRANCH: <span class="user-branch">Branch</span></span>
+                            <span class="badge purple-badge">SEM: <span class="semester">X</span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="subjects glass box">
