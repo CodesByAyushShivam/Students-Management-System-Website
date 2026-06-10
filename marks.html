@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="logout">
-            <button onclick="logout()">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            <button class="logout-js">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
         </div>
     </div>
 
@@ -54,7 +54,102 @@
     </div>
 
     <main class="main-content">
-        <!-- Main content empty for future implementation -->
+        <div class="analytics-header">
+            <div class="header-text">
+                <h1>Academic Analytics</h1>
+                    <p>Detailed performance breakdown for Semester <span class="semester">X</span></p>
+            </div>
+            <div class="header-actions">
+                <button class="action-btn" onclick="print()"><i class="fa-solid fa-download"></i></button>
+                <button class="action-btn logout-mobile-btn logout-js"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            </div>
+        </div>
+
+        <div class="metrics-row">
+            <div class="metric-card glass">
+                <div class="metric-icon purple-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="metric-info">
+                    <span>Current SGPA</span>
+                    <h2 id="current-sgpa">0.00</h2>
+                </div>
+                <div class="card-watermark"><i class="fa-solid fa-chart-simple"></i></div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon blue-icon"><i class="fa-solid fa-award"></i></div>
+                <div class="metric-info">
+                    <span>Total Credits</span>
+                    <h2 id="total-credits">0</h2>
+                </div>
+                <div class="card-watermark"><i class="fa-solid fa-shapes"></i></div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon orange-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="metric-info">
+                    <span>Overall Rank</span>
+                    <h2 id="overall-rank">N/A</h2>
+                </div>
+                <div class="card-watermark"><i class="fa-solid fa-ranking-star"></i></div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon green-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="metric-info">
+                    <span>Subjects Passed</span>
+                    <h2 id="subjects-passed">0/0</h2>
+                </div>
+                <div class="card-watermark"><i class="fa-solid fa-check-double"></i></div>
+            </div>
+        </div>
+
+        <div class="split-container">
+            <div class="detailed-statement box">
+                <div class="card-header">
+                    <h2>Detailed Statement</h2>
+                    <span class="sub-header">Semester <span class="semester">X</span></span>
+                </div>
+                <div class="statement-table-wrapper">
+                    <div class="statement-table" id="statement-table">
+                        <div class="table-header">Subject Name</div>
+                        <div class="table-header text-center">Credits</div>
+                        <div class="table-header text-center">Marks</div>
+                        <div class="table-header text-center">Point</div>
+                        <div class="table-header text-center">Status</div>
+                        
+                        <!-- Table rows populated dynamically by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="subject-performance box">
+                <div class="card-header">
+                    <h2>Subject Performance</h2>
+                </div>
+                <div class="performance-bars-container" id="performance-bars-container">
+                    <!-- Progress bars populated dynamically by JS -->
+                </div>
+                <div class="average-score-wrapper">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Average Score: <strong id="average-score">0.0%</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlights-row">
+            <div class="highlight-card box best-subject-card">
+                <span class="highlight-label">BEST SUBJECT</span>
+                <h3 id="best-subject">N/A</h3>
+                <p id="best-subject-marks">Marks: 0</p>
+            </div>
+            <div class="highlight-card box weakest-subject-card">
+                <span class="highlight-label">WEAKEST SUBJECT</span>
+                <h3 id="weakest-subject">N/A</h3>
+                <p id="weakest-subject-marks">Marks: 0</p>
+            </div>
+            <div class="highlight-card box standing-card">
+                <span class="highlight-label">INSTITUTIONAL STANDING</span>
+                <h3 id="standing-grade">N/A</h3>
+                <p id="standing-rank-status">Calculating standing...</p>
+            </div>
+        </div>
     </main>
 
     <div class="mobile-nav">
