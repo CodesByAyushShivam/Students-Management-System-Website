@@ -347,7 +347,7 @@ nav {
 .credits {
     grid-row: 3/5;
     grid-column: 6/8;
-    border-radius: 50px;
+    border-radius: 500px;
 }
 
 .credits {
@@ -566,6 +566,13 @@ nav {
     }
 }
 
+@media (max-width: 1450px) {
+    .notice-container {
+        gap: 5px;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .user-pfp {
         width: 35%;
@@ -585,7 +592,7 @@ nav {
         grid-column: 1/2;
     }
 
-    .sgpa{
+    .sgpa {
         grid-row: 2/4;
         grid-column: 3/4;
     }
@@ -621,6 +628,13 @@ nav {
         display: none;
     }
 
+    .attend-note {
+        font-size: 15px;
+    }
+
+    #msg {
+        font-size: 15px;
+    }
 
     .main-content {
         left: 0;
@@ -636,6 +650,42 @@ nav {
 @media (max-width: 768px) {
     nav {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .progress-container {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .percentage {
+        font-size: 28px;
+    }
+
+    .grid {
+        grid-template-rows: 2fr repeat(15, 1fr);
+    }
+
+    .notice-board {
+        grid-row: 12/16;
+    }
+
+    .copyright-footer {
+        grid-row: 16/17;
+    }
+
+    .attendance {
+        grid-row: 8/12;
+    }
+
+    .attend-report {
+        grid-row: 2/3;
+        grid-column: 1/3;
     }
 }
 
