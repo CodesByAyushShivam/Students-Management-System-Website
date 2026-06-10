@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Georama:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Sekuya&display=swap');
 
+:root {
+    --primary-color: rgb(109, 40, 217);
+    --secondary-color-a: rgb(167, 139, 250);
+    --secondary-color-b: rgb(196, 181, 253);
+    --secondary-color-c: rgb(221, 214, 254);
+    --tertiary-color: rgb(247, 230, 255);
+    --text-color: rgb(51, 51, 51);
+    --success-color: rgb(15, 139, 88);
+    --danger-color: rgb(239, 68, 68);
+}
 
 * {
     padding: 0;
@@ -133,7 +143,8 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(247, 230, 255, 0.5);
+    /* match dashboard header bg */
     backdrop-filter: blur(10px);
     width: 97%;
     justify-content: space-between;
@@ -150,22 +161,90 @@ nav {
 
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(109, 40, 217);
+    /* primary dark purple */
     text-decoration: none;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(60, 0, 120);
+    /* dark hover purple */
 }
 
 .logo {
     width: 45px;
     height: 45px;
-    background: url("../assets/logo-transparent-white.png") no-repeat center;
+    background: url("../assets/logo-transparent-blue.png") no-repeat center;
     background-size: contain;
 }
 
-.navbar {
+.mobile-nav {
     display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: rgba(247, 230, 255, 0.75);
+    /* glassmorphism light purple */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1.5px solid rgba(109, 40, 217, 0.15);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    /* black text and icons */
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-grow: 1;
+    height: 80%;
+    border-radius: 12px;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav-item i {
+    font-size: 18px;
+}
+
+.mobile-nav-item.active {
+    background-color: rgb(196, 181, 253);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    opacity: 1;
+}
+
+.mobile-nav-item:hover {
+    background-color: var(--secondary-color-b);
+    border: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    opacity: 1;
+}
+
+.mobile-nav-item:hover span {
+    color: var(--primary-color);
+}
+
 
 @media (max-width: 915px) {
 
@@ -189,43 +268,15 @@ nav a {
         display: none;
     }
 
+    main {
+        height: calc(100vh - 65px);
+    }
 
-    .navbar {
+    .mobile-nav {
         display: flex;
-        gap: 20px;
-        justify-content: center;
-        padding: 10px 0px;
-        background-color: rgba(255, 255, 255, 0.8);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        border-radius: 25px 25px 0 0;
-        z-index: 100;
     }
 
-    .navbar a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    .navbar div {
-        background-color: rgba(248, 205, 255, 0.9);
-        padding: 4px 12px;
-        border-radius: 25px;
+    .mobile-nav span {
         color: black;
-        font-weight: 500;
-        transition: 0.4s;
-    }
-
-    .navbar div:hover {
-        cursor: pointer;
-        color: rgb(248, 205, 255);
-        background-color: black;
-    }
-
-    .navbar div:hover a {
-        color: rgb(248, 205, 255);
     }
 }

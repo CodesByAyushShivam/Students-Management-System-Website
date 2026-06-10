@@ -183,7 +183,7 @@ nav {
     margin-bottom: 20px;
     background-color: white;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35), 0 0 20px rgba(210, 88, 255, 0.15), 0 0 40px rgba(210, 88, 255, 0.08);
 }
 
@@ -331,6 +331,58 @@ nav {
     padding: 8px 16px;
     border-radius: 14px;
     text-transform: uppercase;
+}
+
+.logout-badge-btn {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: rgba(247, 230, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1.5px solid rgba(109, 40, 217, 0.15);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(120, 110, 140);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-grow: 1;
+    height: 80%;
+    border-radius: 12px;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav-item i {
+    font-size: 18px;
+}
+
+.mobile-nav-item.active {
+    background-color: var(--secondary-color-b);
+    border: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    opacity: 1;
 }
 
 
@@ -739,6 +791,11 @@ nav {
     .main-content {
         left: 0;
         width: 100%;
+        padding-bottom: 80px;
+    }
+
+    .mobile-nav {
+        display: flex;
     }
 
 
@@ -755,7 +812,7 @@ nav {
 
 @media (max-width: 650px) {
     .main-content {
-        padding: 15px 10px;
+        padding: 15px 10px 85px 10px;
     }
 
     .grid {
@@ -919,6 +976,7 @@ nav {
     #msg {
         font-size: 13px;
         line-height: 1.4;
+        text-align: left;
     }
 
     .attend-note {
@@ -1010,6 +1068,43 @@ nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .logout-badge-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background-color: rgb(254, 226, 226);
+        color: var(--danger-color);
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .logout-badge-btn:hover {
+        background-color: var(--danger-color);
+        color: white;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .badges-row {
+        gap: 6px;
+    }
+
+    .purple-badge,
+    .logout-badge-btn {
+        font-size: 8px;
+        padding: 4px 7px;
+        border-radius: 8px;
+        letter-spacing: 0.2px;
     }
 }
 
