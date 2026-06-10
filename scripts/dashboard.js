@@ -5,12 +5,6 @@ logo.addEventListener("click", () => {
 
 
 
-function logout() {
-    localStorage.removeItem("regNo");
-    location.reload();
-}
-
-
 function openMarks() {
     window.location.href = "marks.html";
 }
