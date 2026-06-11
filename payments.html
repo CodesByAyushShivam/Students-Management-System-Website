@@ -54,7 +54,262 @@
     </div>
 
     <main class="main-content">
-        <!-- Main content empty for now -->
+        <div class="payments-container" id="payments-container">
+            <div class="payments-main-grid" id="payments-main-grid">
+                <!-- Left Panel: Fee Selection & Details -->
+                <div class="form-panel box">
+                    <div class="panel-header">
+                        <h2>Fee Details</h2>
+                        <p>Select the academic fee category you wish to clear</p>
+                    </div>
+                    <form id="payment-form" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="fee-type">Fee Type <span>*</span></label>
+                            <select id="fee-type" class="custom-select" required>
+                                <option value="" disabled selected>-- Select Fee Type --</option>
+                                <option value="Hostel Fee">Hostel Fee</option>
+                                <option value="Mess Fee">Mess Fee</option>
+                                <option value="Examination Fee">Examination Fee</option>
+                                <option value="Library Fee">Library Fee</option>
+                                <option value="Developement Fee">Development Fee</option>
+                                <option value="Tuition Fee">Tuition Fee</option>
+                                <option value="Fine">Fine</option>
+                            </select>
+                        </div>
+
+                        <!-- Dynamic Fine Details Section (Hidden by Default) -->
+                        <div id="fine-details-container" class="fine-details-section" style="display: none;">
+                            <div class="form-group">
+                                <label for="fine-description">Fine Description <span>*</span></label>
+                                <input type="text" id="fine-description" placeholder="e.g., Late Library Return, Broken Lab Equipment">
+                            </div>
+                            <div class="form-group">
+                                <label for="fine-amount">Fine Amount (₹) <span>*</span></label>
+                                <input type="number" id="fine-amount" min="1" placeholder="Enter fine amount">
+                            </div>
+                        </div>
+
+                        <!-- Readonly Amount Box (Hidden in Fine Mode) -->
+                        <div id="amount-container" class="form-group">
+                            <label for="amount">Payable Amount (₹)</label>
+                            <div class="amount-input-wrapper">
+                                <span class="currency-symbol">₹</span>
+                                <input type="text" id="amount" class="readonly-input" readonly placeholder="0.00">
+                            </div>
+                        </div>
+
+                        <!-- UPI ID Input (Shown when UPI is selected in checkout) -->
+                        <div id="upi-payer-container" class="form-group" style="display: none;">
+                            <label for="payer-upi">Your UPI ID <span>*</span></label>
+                            <input type="text" id="payer-upi" placeholder="username@bank">
+                            <small class="form-hint">Enter the UPI ID from which you will make the payment (printed on receipt)</small>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right Panel: Summary & Mockup Checkout -->
+                <div class="sidebar-panel">
+                    <!-- ERP Payment Summary -->
+                    <div class="summary-card box">
+                        <div class="card-header">
+                            <h3>Payment Summary</h3>
+                        </div>
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Student Name</span>
+                                <strong class="user-name">Loading...</strong>
+                            </div>
+                            <div class="summary-row">
+                                <span>Registration No</span>
+                                <strong class="user-reg">Loading...</strong>
+                            </div>
+                            <div class="summary-row">
+                                <span>Branch / Sem</span>
+                                <strong><span id="user-branch">Loading...</span> / Sem <span class="semester">X</span></strong>
+                            </div>
+                            <div class="summary-divider"></div>
+                            <div class="summary-row">
+                                <span>Fee Category</span>
+                                <span id="summary-fee-type" class="summary-highlight">None Selected</span>
+                            </div>
+                            <div class="summary-row total-payable">
+                                <span>Total Payable</span>
+                                <span id="summary-total-amount" class="summary-amount">₹0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paytm Checkout Replica Card -->
+                    <div class="checkout-card" id="checkout-card">
+                        <!-- Top Header Area in Teal -->
+                        <div class="checkout-header">
+                            <div class="merchant-info">
+                                <div class="merchant-logo"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="merchant-name-block">
+                                    <h4>Ayush College of Engineering</h4>
+                                    <small>acepayments@oksbi</small>
+                                </div>
+                            </div>
+                            <div class="checkout-amount-display">
+                                <span class="label">Amount to be paid</span>
+                                <h3 id="checkout-display-amount">₹ 0</h3>
+                            </div>
+                        </div>
+
+                        <!-- Main Checkout Body -->
+                        <div class="checkout-body">
+                            <div class="payment-options">
+                                <!-- Default Option: Paytm Wallet -->
+                                <div class="payment-option-row active" data-method="wallet" onclick="selectPaymentMethod('wallet')">
+                                    <div class="option-left">
+                                        <div class="method-icon wallet-icon"><i class="fa-solid fa-wallet"></i></div>
+                                        <span class="method-label">Paytm Wallet</span>
+                                    </div>
+                                    <div class="option-right">
+                                        <input type="radio" id="method-wallet" name="payment-method" value="wallet" checked>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Pay Now CTA Button -->
+                                <button type="button" class="checkout-pay-btn" id="checkout-pay-btn" onclick="triggerSimulatedPayment()">
+                                    Pay ₹0
+                                </button>
+
+                                <span class="other-label">Other Payment Mode</span>
+
+                                <!-- Cards -->
+                                <div class="payment-option-row" data-method="card" onclick="selectPaymentMethod('card')">
+                                    <div class="option-left">
+                                        <div class="method-icon card-icon"><i class="fa-regular fa-credit-card"></i></div>
+                                        <span class="method-label">Debit & Credit Cards</span>
+                                    </div>
+                                    <div class="option-right">
+                                        <input type="radio" id="method-card" name="payment-method" value="card">
+                                    </div>
+                                </div>
+
+                                <!-- Net Banking -->
+                                <div class="payment-option-row" data-method="netbanking" onclick="selectPaymentMethod('netbanking')">
+                                    <div class="option-left">
+                                        <div class="method-icon banking-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                        <span class="method-label">Net Banking</span>
+                                    </div>
+                                    <div class="option-right">
+                                        <input type="radio" id="method-netbanking" name="payment-method" value="netbanking">
+                                    </div>
+                                </div>
+
+                                <!-- UPI -->
+                                <div class="payment-option-row" data-method="upi" onclick="selectPaymentMethod('upi')">
+                                    <div class="option-left">
+                                        <div class="method-icon upi-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                        <span class="method-label">UPI Payment</span>
+                                    </div>
+                                    <div class="option-right">
+                                        <input type="radio" id="method-upi" name="payment-method" value="upi">
+                                    </div>
+                                </div>
+
+                                <!-- EMIs -->
+                                <div class="payment-option-row" data-method="emi" onclick="selectPaymentMethod('emi')">
+                                    <div class="option-left">
+                                        <div class="method-icon emi-icon">EMI</div>
+                                        <span class="method-label">Pay via EMIs</span>
+                                    </div>
+                                    <div class="option-right">
+                                        <input type="radio" id="method-emi" name="payment-method" value="emi">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loader Overlay -->
+            <div class="payment-processing-overlay" id="payment-processing-overlay" style="display: none;">
+                <div class="overlay-content">
+                    <div class="loading-spinner"></div>
+                    <h3>Processing Payment...</h3>
+                    <p>Connecting to secure server. Please do not close or refresh this page.</p>
+                </div>
+            </div>
+
+            <!-- Success Panel & Receipt -->
+            <div class="payment-success-panel box" id="payment-success-panel" style="display: none;">
+                <div class="success-header">
+                    <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <h2>Payment Successful!</h2>
+                    <p>Your payment has been successfully recorded on the student ledger.</p>
+                </div>
+
+                <div class="receipt-card" id="receipt-card">
+                    <div class="receipt-header">
+                        <div class="receipt-logo"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="receipt-college-details">
+                            <h3>AYUSH COLLEGE OF ENGINEERING</h3>
+                            <p>An ISO 9001:2026 Certified Academic Institution</p>
+                            <span>E-RECEIPT OF ACADEMIC FEES</span>
+                        </div>
+                    </div>
+                    
+                    <div class="receipt-watermark"><i class="fa-solid fa-graduation-cap"></i></div>
+
+                    <div class="receipt-body">
+                        <div class="receipt-grid">
+                            <div class="receipt-field">
+                                <span>Student Name:</span>
+                                <strong id="receipt-student-name">Loading...</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Registration Number:</span>
+                                <strong id="receipt-student-reg">Loading...</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Branch / Semester:</span>
+                                <strong id="receipt-student-branch-sem">Loading...</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Payment Date:</span>
+                                <strong id="receipt-date">Loading...</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Transaction ID:</span>
+                                <strong id="receipt-tx-id" class="receipt-tx-id">ACE202600000000</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Payment Mode:</span>
+                                <strong id="receipt-mode">Paytm Wallet</strong>
+                            </div>
+                            <div class="receipt-field" id="receipt-upi-id-field" style="display: none;">
+                                <span>Payer UPI ID:</span>
+                                <strong id="receipt-upi-id">username@upi</strong>
+                            </div>
+                            <div class="receipt-field">
+                                <span>Fee Category:</span>
+                                <strong id="receipt-fee-type">Hostel Fee</strong>
+                            </div>
+                        </div>
+
+                        <div class="receipt-amount-box">
+                            <div class="amount-title">AMOUNT PAID</div>
+                            <div class="amount-value" id="receipt-amount-paid">₹0</div>
+                            <div class="payment-status-badge"><i class="fa-solid fa-circle-check"></i> SUCCESS</div>
+                        </div>
+                    </div>
+
+                    <div class="receipt-footer">
+                        <p>This is a system-generated electronic receipt for college records. No physical signature is required.</p>
+                        <small>Support Desk: billing@ayushcolleges.edu.in</small>
+                    </div>
+                </div>
+
+                <div class="success-actions">
+                    <button type="button" class="action-btn-print" onclick="window.print()"><i class="fa-solid fa-print"></i> Download Receipt</button>
+                    <button type="button" class="action-btn-reset" onclick="resetPaymentForm()"><i class="fa-solid fa-circle-plus"></i> Pay Another Fee</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <div class="mobile-nav">

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices | Ayush College of Engineering</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/notices.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="img"></div>
+            <div class="title">
+                Ayush College of Engineering
+            </div>
+        </div>
+        <div class="logout">
+            <button onclick="logout()">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+    </div>
+
+    <div class="leftnav">
+        <div class="info">
+            <div class="user-pfp"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="user-name">Student</div>
+            <div class="user-reg">Reg: Registration No.</div>
+            <div class="sem-info">Sem X <strong>&middot;</strong> Branch</div>
+        </div>
+
+        <nav>
+            <div id="dashboard" class="nav-items" onclick="openDashboard()">
+                <i class="fa-regular fa-chart-bar"></i>
+                Dashboard
+            </div>
+            <div id="marks" class="nav-items" onclick="openMarks()">
+                <i class="fa-solid fa-list-check"></i>
+                Marks
+            </div>
+            <div id="notices" class="nav-items active">
+                <i class="fa-regular fa-bell"></i>
+                Notices
+            </div>
+            <div id="payments" class="nav-items" onclick="openPayments()">
+                <i class="fa-regular fa-credit-card"></i>
+                Payments
+            </div>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <div class="notices-container">
+            <div class="notices-header">
+                <h1>College Notice Board</h1>
+                <p>Stay updated with the latest academic alerts, schedules, and official notices</p>
+            </div>
+            
+            <div class="notices-list" id="notices-list">
+                <!-- Notices loaded dynamically from JSON -->
+                <div class="notices-loading">
+                    <div class="spinner"></div>
+                    <p>Loading notices...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="mobile-nav">
+        <div id="mobile-dashboard" class="mobile-nav-item" onclick="openDashboard()">
+            <i class="fa-regular fa-chart-bar"></i>
+            <span>Dashboard</span>
+        </div>
+        <div id="mobile-marks" class="mobile-nav-item" onclick="openMarks()">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Marks</span>
+        </div>
+        <div id="mobile-notices" class="mobile-nav-item active">
+            <i class="fa-regular fa-bell"></i>
+            <span>Notices</span>
+        </div>
+        <div id="mobile-payments" class="mobile-nav-item" onclick="openPayments()">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>Payments</span>
+        </div>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/notices.js"></script>
+</body>
+
+</html>
