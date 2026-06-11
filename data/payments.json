@@ -1,0 +1,17 @@
+{
+    "Hostel Fee": 40000,
+    "Mess Fee": 60000,
+    "Examination Fee": 5500,
+    "Library Fee": 2000,
+    "Developement Fee": 12500,
+    "tution": {
+        "sem1": 85000,
+        "sem2": 75000,
+        "sem3": 75000,
+        "sem4": 75000,
+        "sem5": 65000,
+        "sem6": 65000,
+        "sem7": 80000,
+        "sem8": 95000
+    }
+}
