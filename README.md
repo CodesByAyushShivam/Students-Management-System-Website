@@ -173,6 +173,14 @@ Benefits:
 
 ---
 
+## Design Inspiration
+
+The UI design was handcrafted using Vanilla CSS, with layout and visual inspiration partially taken from Google's Stitch AI design tool. AI-generated design concepts were used as a reference during the planning phase, while the final implementation, responsiveness, styling, animations, and component structure were developed and customized manually.
+
+[Stitch](https://stitch.withgoogle.com/)
+
+---
+
 ## ⚙️ Authentication & Data Flow
 
 ### Authentication Workflow
